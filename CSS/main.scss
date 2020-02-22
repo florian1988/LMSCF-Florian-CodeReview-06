@@ -4,7 +4,7 @@ body{
 }
 
 #header{
-	height: 3rem;
+	height: 1rem;
 
 	background-color: #C09AF3;
 
@@ -19,11 +19,12 @@ nav{
 
 .img{
 	width: 100%;
+	border-radius: 3%;
 }
 
 
 .article{
-	background-color: #C09AF3;
+	background-color: grey;
 	border-radius: 3%;
 }
 

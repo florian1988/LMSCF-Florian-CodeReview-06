@@ -3,17 +3,18 @@ body {
   padding: 0%; }
 
 #header {
-  height: 3rem;
+  height: 1rem;
   background-color: #C09AF3; }
 
 nav {
   background-color: #C09AF3; }
 
 .img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 3%; }
 
 .article {
-  background-color: #C09AF3;
+  background-color: grey;
   border-radius: 3%; }
 
 .show {
