@@ -1,0 +1,25 @@
+body {
+  margin: 0%;
+  padding: 0%; }
+
+#header {
+  height: 3rem;
+  background-color: #C09AF3; }
+
+nav {
+  background-color: #C09AF3; }
+
+.img {
+  width: 100%; }
+
+.article {
+  background-color: #C09AF3;
+  border-radius: 3%; }
+
+.show {
+  display: none; }
+
+.notShowBasic {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
