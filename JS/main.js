@@ -23,7 +23,7 @@ var Citys = /** @class */ (function () {
     };
     // main function is there for the other two classes 
     Citys.prototype.main = function () {
-        return "\n\t\t\t<div class=\"container-fluid col-sm-5 col-md-3 rounded\">\n\t\t\t<p class=\"notShowBasic\">" + this.id + "</p>\n\t\t\t<h1 class=\" text-center\">" + this.city + "</h1>\n\t\t\t<img class=\"notShowBasic\" src=\"" + this.image + "\" alt=\"asdf\">\n\t\t";
+        return "\n\t\t\t<div class=\"container-fluid col-sm-5 col-md-3 rounded-pill mb-2 \">\n\t\t\t<p class=\"notShowBasic\">" + this.id + "</p>\n\t\t\t<h1 class=\" text-center bg-light rounded-pill\">" + this.city + "</h1>\n\t\t\t<img class=\"notShowBasic\" src=\"" + this.image + "\" alt=\"asdf\">\n\t\t";
     };
     return Citys;
 }());
@@ -49,7 +49,7 @@ var Restaurant = /** @class */ (function (_super) {
         return _this;
     }
     Restaurant.prototype.mainRestaurant = function () {
-        return _super.prototype.main.call(this) + ("\n\t\t<!-- <div class=\"container-fluid\"> -->\n  \t\t\t  \n\t\t    <div class=\"col-sm-12 m-1 text-center  article \">\n\t\t      \n\t\t      <img class=\" img p-1  img_show d-none d-sm-block\"src=\"" + this.image + "\" alt=\"\">\n\t\t     <h4>" + this.name + "</h4>\n\t\t\t      <div class= text-left >\n\t\t\t      <p>WebPage: <a class=\"btn btn-light\" href=\"" + this.webpage + "\" role=\"button\">Link</a></p>\n\t\t\t      <p>Typ: " + this.typ + "</p>\n\t\t\t      <p>Phone: " + this.phone + "</p>\n\t\t\t     \n\t\t\t      </div>\n\n\t\t      \n\t\t    </div>\t\t\t \n\n\t\t</div>\n\t\t");
+        return _super.prototype.main.call(this) + ("\n\t\t<!-- <div class=\"container-fluid\"> -->\n  \t\t\t  \n\t\t    <div class=\"col-sm-12 text-center article bg-light\">\n\t\t      \n\t\t      <img class=\" img p-1  img_show d-none d-sm-block\"src=\"" + this.image + "\" alt=\"\">\n\t\t     <h4 >" + this.name + "</h4>\n\t\t\t      <div class=\" text-left \" >\n\t\t\t      <p>WebPage: <a class=\"btn btn-light\" href=\"" + this.webpage + "\" role=\"button\">Link</a></p>\n\t\t\t      <p >Typ: " + this.typ + "</p>\n\t\t\t      <p >Phone: " + this.phone + "</p>\n\t\t\t     \n\t\t\t      </div>\n\n\t\t      \n\t\t    </div>\t\t\t \n\n\t\t</div>\n\t\t");
     };
     return Restaurant;
 }(Citys));
@@ -75,7 +75,7 @@ var Eventt = /** @class */ (function (_super) {
         return _this;
     }
     Eventt.prototype.mainEvent = function () {
-        return _super.prototype.main.call(this) + ("\n\t\t\t\t\t \n\t    <div class=\"col-sm-12 m-1 text-center  article \">\n\t      \n\t      <img class=\" img p-1  img_show d-none d-sm-block\"src=\"" + this.image + "\" alt=\"\">\n\t      <h4>" + this.name + "</h4>\n\t\t      <div class= text-left>\n\t\t      <p>Date: " + this.date + "</p>\n\t\t      <p>Start: " + this.time + "</p>\n\t\t     \n\t\t      </div>\n\n\t      \n\t    </div>\n\t\t</div>\n\t\t");
+        return _super.prototype.main.call(this) + ("\n\t\t\t\t\t \n\t    <div class=\"col-sm-12 text-center article bg-light\">\n\t      \n\t      <img class=\" img p-1  img_show d-none d-sm-block\"src=\"" + this.image + "\" alt=\"\">\n\t      <h4>" + this.name + "</h4>\n\t\t      <div class= text-left>\n\t\t      <p>Date: " + this.date + "</p>\n\t\t      <p>Start: " + this.time + "</p>\n\t\t     \n\t\t      </div>\n\n\t      \n\t    </div>\n\t\t</div>\n\t\t");
     };
     return Eventt;
 }(Citys));
@@ -90,3 +90,11 @@ for (var i = 0; i < events.length; i++) {
     document.getElementsByClassName("showevents")[0].innerHTML += (events[i].mainEvent());
 }
 ;
+$('.movementRestaurant').mousemove(function (e) {
+    var x = (e.pageX * -1 / 5), y = (e.pageY * -1 / 5);
+    $(this).css('background-position', x + 'px ' + y + 'px');
+});
+$('.movementEvent').mousemove(function (e) {
+    var x = (e.pageX * -4 / 8), y = (e.pageY * -4 / 8);
+    $(this).css('background-position', x + 'px ' + y + 'px');
+});

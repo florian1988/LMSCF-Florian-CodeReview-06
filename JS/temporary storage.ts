@@ -23,7 +23,7 @@ class Eventt extends Citys{
 				    <div class="col-sm-2 m-1  article ">
 				      <img class=" img p-1 rounded img_show "src="${this.image}" alt="">
 				      <div class="show">
-				      <h4>${this.name}</h4>
+				      <h4 class="rounded-pill nav">${this.name}</h4>
 				      <h3>${this.date}</h3>
 				      <h3>Beginn: ${this.time}Uhr</h3>
 				      

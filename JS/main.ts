@@ -28,9 +28,9 @@ class Citys{
 // main function is there for the other two classes 
 	main(){
 		return`
-			<div class="container-fluid col-sm-5 col-md-3 rounded">
+			<div class="container-fluid col-sm-5 col-md-3 rounded-pill mb-2 ">
 			<p class="notShowBasic">${this.id}</p>
-			<h1 class=" text-center">${this.city}</h1>
+			<h1 class=" text-center bg-light rounded-pill align-self-center">${this.city}</h1>
 			<img class="notShowBasic" src="${this.image}" alt="asdf">
 		`
 
@@ -76,14 +76,14 @@ class Restaurant extends Citys{
 		return super.main() + `
 		<!-- <div class="container-fluid"> -->
   			  
-		    <div class="col-sm-12 m-1 text-center  article ">
+		    <div class="col-sm-12 text-center article bg-light">
 		      
 		      <img class=" img p-1  img_show d-none d-sm-block"src="${this.image}" alt="">
-		     <h4>${this.name}</h4>
-			      <div class= text-left >
+		     <h4 >${this.name}</h4>
+			      <div class=" text-left " >
 			      <p>WebPage: <a class="btn btn-light" href="${this.webpage}" role="button">Link</a></p>
-			      <p>Typ: ${this.typ}</p>
-			      <p>Phone: ${this.phone}</p>
+			      <p >Typ: ${this.typ}</p>
+			      <p >Phone: ${this.phone}</p>
 			     
 			      </div>
 
@@ -134,7 +134,7 @@ class Eventt extends Citys{
 	mainEvent(){
 		return super.main() + `
 					 
-	    <div class="col-sm-12 m-1 text-center  article ">
+	    <div class="col-sm-12 text-center article bg-light">
 	      
 	      <img class=" img p-1  img_show d-none d-sm-block"src="${this.image}" alt="">
 	      <h4>${this.name}</h4>
@@ -182,10 +182,17 @@ document.getElementsByClassName("showevents")[0].innerHTML += (events[i].mainEve
 
 
 
+ $('.movementRestaurant').mousemove(function(e) {
+    var x = (e.pageX * -1 / 5), y = (e.pageY * -1 / 5);
+    $(this).css('background-position', x + 'px ' + y + 'px');
+})
 
 
 
-
+ $('.movementEvent').mousemove(function(e) {
+    var x = (e.pageX * -4 / 8), y = (e.pageY * -4 / 8);
+    $(this).css('background-position', x + 'px ' + y + 'px');
+})
 
 
 

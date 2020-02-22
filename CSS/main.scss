@@ -3,35 +3,43 @@ body{
 	padding: 0%;
 }
 
+
 #header{
-	height: 1rem;
+	height: 2rem;
 
 	background-color: #C09AF3;
-
 }
-
-
 
 nav{
 	background-color: #C09AF3;
 }
 
+.movementRestaurant{
+	background: url(../IMG/ljub.jpg);
+	height: 100%;
+	width: 100%;
+}
+
+.movementEvent{
+	background: url(../IMG/salz.jpeg);
+}
 
 .img{
 	width: 100%;
-	border-radius: 3%;
-}
+	border-radius: 30%;
 
+}
 
 .article{
-	background-color: grey;
-	border-radius: 3%;
+	border: 5px solid #C09AF3;
+	border-radius: 5%;
 }
 
-.show{
-	display: none;
-
-}
 .notShowBasic{
 	display: none;
+}
+
+#footer{
+	height: 4rem;
+	background-color: #C09AF3;
 }
