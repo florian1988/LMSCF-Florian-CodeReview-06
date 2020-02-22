@@ -8,7 +8,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <link rel="stylesheet" type="text/css" href="./CSS/main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 <header class="container-fluid  "   id="header">
@@ -24,10 +24,10 @@
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link citybutton" href="#">Salzburg</a>
+      <a class="nav-link citybutton " href="#1">Restuarant</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link citybutton" href="#">Ljubljana</a>
+      <a class="nav-link citybutton" href="#2">Event</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Contact</a>
@@ -43,19 +43,21 @@
     </div>
 
 
-<div class= " col-12 border rounded shadow text-center mt-4 movementRestaurant 
+<div id="1" class= " col-12 border rounded shadow text-center mt-4 movementRestaurant 
 mb-4">
-
-  <p class="  display-3 mt-2 ">Restaurant's</p>
+<div class=" row justify-content-center">
+  <p class="  col-4 display-3 mt-2 bg-light rounded-pill">Restaurant's</p>
+</div>
+  
 
   <div class = "showrestaurants row  pl-1 pr-1" ></div>
 
 </div>
 
-<div class= " border rounded shadow text-center movementEvent mb-4 ">
-
-  <p class=" display-3 mt-2 ">Event's</p>
-
+<div id="2" class= " col-12 border rounded shadow text-center movementEvent mb-4 ">
+<div class=" row justify-content-center">
+  <p class=" col-3 display-3 mt-2 bg-light rounded-pill">Event's</p>
+</div>
   <div class = "showevents row pl-1 pr-1" ></div>
 
 </div>

@@ -30,7 +30,7 @@ class Citys{
 		return`
 			<div class="container-fluid col-sm-5 col-md-3 rounded-pill mb-2 ">
 			<p class="notShowBasic">${this.id}</p>
-			<h1 class=" text-center bg-light rounded-pill align-self-center">${this.city}</h1>
+			<h1 class=" text-center bg-light rounded-pill ">${this.city}</h1>
 			<img class="notShowBasic" src="${this.image}" alt="asdf">
 		`
 
@@ -193,6 +193,10 @@ document.getElementsByClassName("showevents")[0].innerHTML += (events[i].mainEve
     var x = (e.pageX * -4 / 8), y = (e.pageY * -4 / 8);
     $(this).css('background-position', x + 'px ' + y + 'px');
 })
+
+
+
+ 
 
 
 

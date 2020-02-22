@@ -23,7 +23,7 @@ var Citys = /** @class */ (function () {
     };
     // main function is there for the other two classes 
     Citys.prototype.main = function () {
-        return "\n\t\t\t<div class=\"container-fluid col-sm-5 col-md-3 rounded-pill mb-2 \">\n\t\t\t<p class=\"notShowBasic\">" + this.id + "</p>\n\t\t\t<h1 class=\" text-center bg-light rounded-pill\">" + this.city + "</h1>\n\t\t\t<img class=\"notShowBasic\" src=\"" + this.image + "\" alt=\"asdf\">\n\t\t";
+        return "\n\t\t\t<div class=\"container-fluid col-sm-5 col-md-3 rounded-pill mb-2 \">\n\t\t\t<p class=\"notShowBasic\">" + this.id + "</p>\n\t\t\t<h1 class=\" text-center bg-light rounded-pill \">" + this.city + "</h1>\n\t\t\t<img class=\"notShowBasic\" src=\"" + this.image + "\" alt=\"asdf\">\n\t\t";
     };
     return Citys;
 }());
